@@ -3,6 +3,7 @@ package br.edu.fatecsjc.lgnspringapi.entity;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 class OrganizationTest {
 
     @Test

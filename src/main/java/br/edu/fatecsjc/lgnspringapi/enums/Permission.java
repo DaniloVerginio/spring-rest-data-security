@@ -10,5 +10,6 @@ public enum Permission {
     ADMIN_CREATE("admin:create"),
     ADMIN_UPDATE("admin:update");
 
-    private final String permission;
+    private final String permissionAdmin;
+
 }

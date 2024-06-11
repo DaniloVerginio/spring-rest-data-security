@@ -20,8 +20,13 @@ import java.util.List;
 @Tag(name = "Group and Members")
 @SecurityRequirement(name = "bearerAuth")
 public class GroupResource {
+   
+    private final GroupService groupService;
+
     @Autowired
-    private GroupService groupService;
+    public GroupResource(GroupService groupService) {
+        this.groupService = groupService;
+    }
 
     @GetMapping
     @Operation(

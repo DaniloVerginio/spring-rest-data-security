@@ -23,5 +23,4 @@ public class GroupMemberMarathon {
     @JoinColumn(name = "marathon_id")
     private Marathon marathon;
 
-    // Getters and setters
 }

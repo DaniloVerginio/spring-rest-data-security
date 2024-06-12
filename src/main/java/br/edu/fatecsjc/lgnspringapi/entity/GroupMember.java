@@ -21,8 +21,5 @@ public class GroupMember {
     @Column(name = "name")
     private String name;
 
-    // Outros atributos
-
-    // Getters and setters
 }
 

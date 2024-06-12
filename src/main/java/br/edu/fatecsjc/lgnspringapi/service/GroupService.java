@@ -14,12 +14,19 @@ import java.util.List;
 
 @Service
 public class GroupService {
+
+    final private GroupRepository groupRepository;
+
+    final private MemberRepository memberRepository;
+
+    final private GroupConverter groupConverter;
+
     @Autowired
-    private GroupRepository groupRepository;
-    @Autowired
-    private MemberRepository memberRepository;
-    @Autowired
-    private GroupConverter groupConverter;
+    public GroupService(GroupRepository groupRepository, MemberRepository memberRepository, GroupConverter groupConverter) {
+        this.groupRepository = groupRepository;
+        this.memberRepository = memberRepository;
+        this.groupConverter = groupConverter;
+    }
 
     public List<GroupDTO> getAll() {
         return groupConverter.convertToDto(groupRepository.findAll());

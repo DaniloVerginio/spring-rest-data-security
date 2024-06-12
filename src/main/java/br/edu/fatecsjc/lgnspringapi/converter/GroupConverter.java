@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public class GroupConverter implements Converter<Group, GroupDTO> {
     // @Autowired
-    //private ModelMapper modelMapper;
+
     private final ModelMapper modelMapper;
 
     private TypeMap<GroupDTO, Group> propertyMapperDto;
